@@ -1,5 +1,5 @@
 import './App.css'
-
+import Navbar from './Navbar';
 function Header() {
   return (
     <header>
@@ -11,13 +11,14 @@ function Header() {
 
 
 function App() {
-  return (
-      <div className='content'>
-        <Header/>
-        <main>
-
-        </main>
-      </div>    
+  return ( 
+    <div>
+      <Navbar/>
+      <Header/>  
+      <main>
+        
+      </main>
+    </div>    
   )
 }
 

@@ -8,7 +8,7 @@ html {
   font-family: "Quicksand", sans-serif;
   line-height: 1.5;
 
-  color: #ebe7ef;
+  /* color: #ebe7ef; */
   background: radial-gradient(#280a48, #20043d);
 
   font-synthesis: none;
@@ -41,8 +41,8 @@ header h1 {
 
 header p {
   margin: 0;
-  font-size: 1.25rem;
-  color: #8964b0;
+  font-size: 1.5rem;
+  color: #E1D7C6;
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -50,4 +50,31 @@ main {
   width: 90%;
   max-width: 50rem;
   margin: auto;
+}
+
+.navbar {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(60deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 9px rgba(0, 0, 1.5, 1.5));
+  max-width: 950px;
+  border-bottom: 2px solid #8259ad;
+}
+
+.navbar h1 {
+  color: #ea00ff;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 14px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #ea00ff;
 }
