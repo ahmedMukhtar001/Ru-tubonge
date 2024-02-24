@@ -1,5 +1,8 @@
+import React, { useState } from 'react';
 import './App.css'
 import Navbar from './Navbar';
+import SuggestionForm from './SuggestionForm';
+import SuggestionList from './SuggestionList';
 function Header() {
   return (
     <header>
@@ -11,12 +14,24 @@ function Header() {
 
 
 function App() {
+
+  const [suggestions, setSuggestions] = useState([]);
+
+  const handleSuggestionSubmit = (suggestion) => {
+    setSuggestions([...suggestions, suggestion]);
+  };
+
   return ( 
     <div>
       <Navbar/>
       <Header/>  
       <main>
-        
+        <div className="app-container">
+            <h1>Suggestion Box</h1>
+            <SuggestionForm onSuggestionSubmit={handleSuggestionSubmit} />
+            <SuggestionList suggestions={suggestions} />
+        </div>
+      
       </main>
     </div>    
   )
