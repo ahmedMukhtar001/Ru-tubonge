@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css'
 import Navbar from './Navbar';
 import SuggestionForm from './SuggestionForm';
@@ -17,8 +17,8 @@ function App() {
 
   const [suggestions, setSuggestions] = useState([]);
 
-  const handleSuggestionSubmit = (suggestion) => {
-    setSuggestions([...suggestions, suggestion]);
+  const addSuggestion = (text) => {
+    setSuggestions([...suggestions, { id: suggestions.length + 1, text }]);
   };
 
   return ( 
@@ -27,8 +27,8 @@ function App() {
       <Header/>  
       <main>
         <div className="app-container">
-            <h1>Suggestion Box</h1>
-            <SuggestionForm onSuggestionSubmit={handleSuggestionSubmit} />
+            {/* <h1>Suggestion Box</h1> */}
+            <SuggestionForm addSuggestion={addSuggestion} />
             <SuggestionList suggestions={suggestions} />
         </div>
       
