@@ -71,11 +71,17 @@ main {
   margin-left: 14px;
   text-decoration: none;
   padding: 6px;
+  color: white;
 }
 .navbar a:hover {
   color: #ea00ff;
 }
-
+.suggestion-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
 .text-area {
   background-color: #dddd;
   color: #666666;
@@ -120,4 +126,89 @@ main {
   font-family: "Roboto Condensed", sans-serif;
   color: #E1D7C6;
   margin-bottom: 8px;
+}
+
+.add-suggestion {
+  background-color: #ea00ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-suggestion:hover {
+  background-color: #0056b3;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin-container {
+  color: white;
+  padding: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.signin-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.signin-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signin-button:hover {
+  background-color: #0056b3;
+}
+
+.signin-error {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.suggestions .sign-in-command {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.signin-container {
+  width: 300px;
+  text-align: center;
+}
+
+.signin-container h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.signin-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signin-container button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: #dc3545;
+  margin-top: 10px;
 }
