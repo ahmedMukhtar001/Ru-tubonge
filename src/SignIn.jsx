@@ -20,7 +20,7 @@ function SignIn() {
   return (
     <div className="signin-container">
       <h2>Sign In</h2>
-      <button onClick={handleSignIn}>Sign In Anonymously</button>
+      <button onClick={handleSignIn} className="btn-signIn">Sign In Anonymously</button>
       {error && <p className="error">{error}</p>}
     </div>
   );

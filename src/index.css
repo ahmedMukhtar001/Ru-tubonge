@@ -180,9 +180,10 @@ main {
 }
 
 .suggestions .sign-in-command {
-  color: white;
-  font-weight: bold;
-  font-size: 3rem;
+  color: #ea00ff;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .signin-container {
@@ -197,7 +198,7 @@ main {
 
 .signin-container button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #c7ade2;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -205,7 +206,7 @@ main {
 }
 
 .signin-container button:hover {
-  background-color: #0056b3;
+  background-color: #ea00ff;
 }
 
 .error {
